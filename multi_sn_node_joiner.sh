@@ -2,7 +2,7 @@
 SAFENET="dreamnet"
 CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/dreamnet.config"
 NODE_NUM=10
-USER=$(whoamin)
+USER=$(whoami)
 
 
 curl -so- https://raw.githubusercontent.com/maidsafe/safe_network/main/resources/scripts/install.sh | bash
