@@ -16,10 +16,10 @@ safe networks switch $SAFENET
 ACTIVE_IF=$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
 LOCAL_IP=$(echo $(ifdata -pa "$ACTIVE_IF"))
 PUBLIC_IP=$(echo $(curl -s ifconfig.me))
-
+SAFE_PORT= 12000
 for CURRENT_NODE in  $(seq $NODE_NUM)
 do
-SAFE_PORT= $((12000+${CURRENT_NODE}))
+SAFE_PORT+= ${CURRENT_NODE}
 
 CURRENT_ROOT_DIR=~/.safe/node/local_node$CURRENT_NODE/
 CURRENT_LOG_DIR=~/.safe/node/local_node$CURRENT_NODE/
