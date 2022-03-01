@@ -1,7 +1,7 @@
 #!/bin/bash
 SAFENET="dreamnet"
 CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/dreamnet.config"
-NODE_NUM=10
+NODE_NUM=9
 USER=$(whoami)
 
 
@@ -19,10 +19,11 @@ PUBLIC_IP=$(echo $(curl -s ifconfig.me))
 
 for CURRENT_NODE in {1..$NODE_NUM}
 do
-SAFE_PORT=12000 + $CURRENT_NODE
+SAFE_PORT=(12000+$CURRENT_NODE)
 
 CURRENT_ROOT_DIR=~/.safe/node/local_node$CURRENT_NODE/
 CURRENT_LOG_DIR=~/.safe/node/local_node$CURRENT_NODE/
+mkdir $CURRENT_ROOT_DIR
 
 echo -n "#!/bin/bash
 RUST_LOG=safe_network=trace,qp2p=info \
