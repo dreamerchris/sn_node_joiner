@@ -19,7 +19,7 @@ PUBLIC_IP=$(echo $(curl -s ifconfig.me))
 
 for CURRENT_NODE in {1..$NODE_NUM}
 do
-SAFE_PORT=(12000+$CURRENT_NODE)
+SAFE_PORT= 12000+${CURRENT_NODE}
 
 CURRENT_ROOT_DIR=~/.safe/node/local_node$CURRENT_NODE/
 CURRENT_LOG_DIR=~/.safe/node/local_node$CURRENT_NODE/
