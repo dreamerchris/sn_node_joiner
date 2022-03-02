@@ -1,13 +1,12 @@
-# multi_sn_node_joiner
-WIP sets up multiple users in a debian machine, installs safe and node, then joins the testnet
+runs 20 nodes of sn_node (see safenetforum.org) as systemctl services
 
+either one liner:
+(works on debian you need sudo apt-get install git moreutils it will launch 20 nodes with port 12001-12020)
+git clone https://github.com/dreamerchris/multi_sn_node_joiner.git && cd multi_sn_node_joiner && sudo chmod u+x multi_sn_node_joiner.sh && sh multi_sn_node_joiner.sh
 
-what it does now:
--creates new user
--add new user to sudoers
--install safe
--install node
+or manually
+git clone https://github.com/dreamerchris/multi_sn_node_joiner.git
+then cd into multi_sn_node_joiner folder
+then run sh multi_sn_node_joiner.sh
 
-to be done:
-- it currently asks for the password of the new user so it can install safe node
-- the user should not be requested a user password
+if you want to stop all nodes run multi_down.sh
