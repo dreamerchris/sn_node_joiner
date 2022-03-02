@@ -1,5 +1,7 @@
 runs 20 nodes of sn_node (see safenetforum.org) as systemctl services
 
+joins dreamnet (when it is online see safenetforum.org)
+
 either one liner:
 
 (works on debian you need sudo apt-get install git moreutils it will launch 20 nodes with port 12001-12020)
