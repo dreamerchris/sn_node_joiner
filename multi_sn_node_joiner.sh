@@ -41,7 +41,7 @@ Description=Safe Local Node $CURRENT_NODE
 [Service]
 User=$USER
 ExecStart=/home/$USER/.safe/node/start-node$CURRENT_NODE.sh
-RemainAfterExit=yes
+Type=forking
 [Install]
 WantedBy=multi-user.target"\
 | sudo tee /etc/systemd/system/sn_node$CURRENT_NODE.service
