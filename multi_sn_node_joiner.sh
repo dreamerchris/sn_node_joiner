@@ -34,7 +34,7 @@ echo -n "[Unit]
 Description=Safe Local Node $CURRENT_NODE
 [Service]
 User=$USER
-ExecStart=~/.safe/node/start-node$CURRENT_NODE.sh
+ExecStart=$HOME/.safe/node/start-node$CURRENT_NODE.sh
 Type=forking
 [Install]
 WantedBy=multi-user.target"\
