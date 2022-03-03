@@ -4,12 +4,6 @@ CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/drea
 NODE_NUM=20
 USER=$(whoami)
 
-
-curl -so- https://raw.githubusercontent.com/maidsafe/safe_network/main/resources/scripts/install.sh | bash
-
-hash -r
-safe node install
-
 safe networks add $SAFENET "$CONFIG_URL"
 safe networks switch $SAFENET
 
