@@ -14,21 +14,21 @@ PUBLIC_IP=$(echo $(curl -s ifconfig.me))
 for CURRENT_NODE in  $(seq $NODE_NUM)
 do
 SAFE_PORT=$((12000+$CURRENT_NODE))
-CURRENT_ROOT_DIR=~/.safe/node/local_node$CURRENT_NODE/
-CURRENT_LOG_DIR=~/.safe/node/local_node$CURRENT_NODE/
+CURRENT_ROOT_DIR=$HOME/.safe/node/local_node$CURRENT_NODE/
+CURRENT_LOG_DIR=$HOME/.safe/node/local_node$CURRENT_NODE/
 mkdir $CURRENT_ROOT_DIR
 
 echo -n "#!/bin/bash
 RUST_LOG=safe_network=trace,qp2p=info \
-        ~/.safe/node/sn_node \
+        $HOME/.safe/node/sn_node \
         --local-addr '$LOCAL_IP':$SAFE_PORT \
         --public-addr '$PUBLIC_IP':$SAFE_PORT \
         --skip-auto-port-forwarding \
         --root-dir '$CURRENT_ROOT_DIR' \
         --log-dir '$CURRENT_LOG_DIR' & disown" \
-| tee ~/.safe/node/start-node$CURRENT_NODE.sh
+| tee $HOME/.safe/node/start-node$CURRENT_NODE.sh
 
-chmod u+x ~/.safe/node/start-node$CURRENT_NODE.sh
+chmod u+x $HOME/.safe/node/start-node$CURRENT_NODE.sh
 
 echo -n "[Unit]
 Description=Safe Local Node $CURRENT_NODE
