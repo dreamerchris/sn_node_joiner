@@ -27,7 +27,7 @@ echo ""
 echo ""
 echo $(safe --version) "install complete"
 
-hash -r
+source sourcefilecli
 
 safe node install
 echo ""
