@@ -1,5 +1,5 @@
 #!/bin/bash
-safe node killall
+nohup safe node killall >/dev/null 2>&1
 NODE_NUM=20
 for CURRENT_NODE in  $(seq $NODE_NUM)
 do
