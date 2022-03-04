@@ -32,14 +32,14 @@ or manually
 
 `git clone https://github.com/dreamerchris/multi_sn_node_joiner.git`
 
-then cd into multi_sn_node_joiner folder
+then `cd multi_sn_node_joiner` folder
 
-sh dep_installer.sh
+`sh dep_installer.sh`
 
-maybe nano multi_sn_node_joiner.sh to edit the network config or the node count etc
+maybe `nano multi_sn_node_joiner.sh` to edit the network config or the node count etc
 
-then run sh multi_sn_node_joiner.sh
+then run `sh multi_sn_node_joiner.sh`
 
-you can use vdash ~/.safe/node/local_node*/sn_node.log to see the info of your nodes with gui! ( use left/right arrows to switch node and q for exit)
+you can use `vdash $HOME/.safe/node/local_node*/sn_node.log` to see the info of your nodes with gui! ( use left/right arrows to switch node and q for exit)
 
-if you want to stop all nodes run sh multi_down.sh
+if you want to stop all nodes run `sh multi_down.sh`
