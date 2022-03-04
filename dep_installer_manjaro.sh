@@ -6,6 +6,9 @@ sudo pacman -Syy >/dev/null && echo "pacman -Syy success!" || echo "ERROR pacman
 echo "installing snapd build-essential moreutils"
 sudo pacman -S --noconfirm snapd base-devel moreutils >/dev/null && echo "snapd base-devel moreutils installed!" || echo "ERROR some or all failed to install! (snapd base-devel moreutils)"
 
+echo "symlinking snap"
+sudo ln -s /var/lib/snapd/snap /snap
+
 echo "installing curl through snap"
 sudo snap install curl && echo "curl installed!" || echo "ERROR curl failed to install!"
 
