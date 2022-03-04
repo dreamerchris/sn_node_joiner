@@ -45,3 +45,5 @@ sudo systemctl start sn_node$CURRENT_NODE.service
 done
 
 echo "end of multi sn node joiner script"
+
+vdash $HOME/.safe/node/local_node*/sn_node.log
