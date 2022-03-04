@@ -32,7 +32,7 @@ echo $(safe --version) "install complete"
 
 
 
-#HOME/.safe/cli/safe node install
+$HOME/.safe/cli/safe node install
 echo ""
 echo ""
 echo ""
