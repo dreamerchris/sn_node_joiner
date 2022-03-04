@@ -1,5 +1,5 @@
 I have an idea about having multiple nodes from one machine without podman or docker
-https://github.com/dreamerchris/multi_sn_node_joiner
+
 
 how to:
 
