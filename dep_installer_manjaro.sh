@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "apt update"
+echo "pacman -Syy"
 sudo pacman -Syy >/dev/null && echo "pacman -Syy success!" || echo "ERROR pacman -Syy failed"
 
 echo "installing snapd build-essential moreutils"
@@ -27,7 +27,7 @@ echo ""
 echo ""
 echo $(safe --version) "install complete"
 
-source sourcefilecli
+source ./sourcefilecli
 
 safe node install
 echo ""
