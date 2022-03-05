@@ -1,12 +1,12 @@
 #!/bin/bash
-SAFENET="dreamnet"
-CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/dreamnet.config"
+SAFENET="playground"
+CONFIG_URL="https://safe-testnet-tool.s3.eu-west-2.amazonaws.com/public-node_connection_info.config"
 USER=$(whoami)
 
 safe networks add $SAFENET "$CONFIG_URL"
 safe networks switch $SAFENET
 
-=$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
+ACTIVE_IF=$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
 LOCAL_IP=$(echo $(ifdata -pa "$ACTIVE_IF"))
 PUBLIC_IP=$(echo $(curl -s ifconfig.me))
 
