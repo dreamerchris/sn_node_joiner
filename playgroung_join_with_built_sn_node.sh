@@ -6,6 +6,16 @@ USER=$(whoami)
 safe networks add $SAFENET "$CONFIG_URL"
 safe networks switch $SAFENET
 
+
+
+safe cat safe://hyfenryyban3rya95df67upomjse4wjaumy1awb94hs8oyfezjnpwykunu6zo > sn_node.zip
+
+unzip sn_node.zip -d .
+
+mkdir $HOME/.safe/node/
+
+sudo cp sn_node $HOME/.safe/node/sn_node
+
 ACTIVE_IF=$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
 LOCAL_IP=$(echo $(ifdata -pa "$ACTIVE_IF"))
 PUBLIC_IP=$(echo $(curl -s ifconfig.me))
@@ -14,6 +24,7 @@ CURRENT_NODE=1
 SAFE_PORT=12001
 CURRENT_ROOT_DIR=$HOME/.safe/node/local_node$CURRENT_NODE/
 CURRENT_LOG_DIR=$HOME/.safe/node/local_node$CURRENT_NODE/
+rm -rf $CURRENT_ROOT_DIR
 mkdir $CURRENT_ROOT_DIR
 
 echo -n "#!/bin/bash
@@ -45,4 +56,4 @@ echo ""
 echo "End of multi sn node joiner script. Starting vdash!"
 echo ""
 
-$HOME/.cargo/bin/vdash $HOME/.safe/node/local_node*/sn_node.log
+$HOME/.cargo/bin/vdash $HOME/.safe/node/local_node1/sn_node.log
