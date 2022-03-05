@@ -1,3 +1,11 @@
+#!/bin/bash
+SAFENET="dreamnet"
+CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/dreamnet.config"
+USER=$(whoami)
+
+safe networks add $SAFENET "$CONFIG_URL"
+safe networks switch $SAFENET
+
 =$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
 LOCAL_IP=$(echo $(ifdata -pa "$ACTIVE_IF"))
 PUBLIC_IP=$(echo $(curl -s ifconfig.me))
