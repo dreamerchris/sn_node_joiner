@@ -13,4 +13,4 @@ tree  $HOME/.safe
 
 PATH=$PATH:/$HOME/.safe/cli
 
-echo "now launch single_sn_node_joiner or multi_sn_node_joiner
+echo "now launch single_sn_node_joiner or multi_sn_node_joiner"
