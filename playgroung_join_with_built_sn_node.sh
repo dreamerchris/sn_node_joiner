@@ -6,6 +6,10 @@ USER=$(whoami)
 safe networks add $SAFENET "$CONFIG_URL"
 safe networks switch $SAFENET
 
+safe cat safe://hyfenryyban3rya95df67upomjse4wjaumy1awb94hs8oyfezjnpwykunu6zo > sn_node.zip
+
+unzip sn_node.zip -d .
+
 mkdir $HOME/.safe/node/
 
 sudo cp sn_node $HOME/.safe/node/sn_node
