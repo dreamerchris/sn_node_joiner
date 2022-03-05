@@ -43,7 +43,7 @@ WantedBy=multi-user.target"\
 sudo systemctl start sn_node$CURRENT_NODE.service
 
 done
-
-echo "end of multi sn node joiner script"
-
+echo ""
+echo "End of multi sn node joiner script. Starting vdash!"
+echo ""
 $HOME/.cargo/bin/vdash $HOME/.safe/node/local_node*/sn_node.log
