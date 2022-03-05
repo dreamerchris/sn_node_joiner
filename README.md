@@ -1,6 +1,6 @@
 I have an idea about having multiple nodes from one machine without podman or docker
 
-how to use:
+how to use for dreamnet:
 
 tested in debian 10/11 and manjaro
 
@@ -46,3 +46,43 @@ then run `sh multi_sn_node_joiner.sh`
 the script runs vdash to see the info of your nodes with gui! ( use left/right arrows to switch node and q for exit)
 
 if you want to stop all nodes run `sh multi_down.sh`
+
+
+
+how to use for the 5/3/2022 playground:
+
+On debian:
+
+`sudo apt-get update && sudo apt-get install -y git`
+
+`git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
+
+`sh dep_installer_debian.sh && sh playgroung_join_with_built_sn_node.sh`
+
+^^ this will:
+- install the dep and safe cli
+- add playground config and switch to it
+- safe file get the sn_node.zip from the playground itself
+- unzip it and copy it in ~/.safe/node
+- add a service to join as a node
+
+run `sh single_down.sh` to remove the node! 
+
+
+
+On manjaro:
+
+`sudo pacman -Syy && sudo pacman -S --noconfirm git`
+
+`git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
+
+`sh dep_installer_manjaro.sh && sh playgroung_join_with_built_sn_node.sh`
+
+^^ this will:
+- install the dep and safe cli
+- add playground config and switch to it
+- safe file get the sn_node.zip from the playground itself
+- unzip it and copy it in ~/.safe/node
+- add a service to join as a node
+
+run `sh single_down.sh` to remove the node!
