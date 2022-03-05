@@ -57,7 +57,7 @@ On debian:
 
 `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
 
-`sh dep_installer_debian.sh && sh playgroung_join_with_built_sn_node.sh`
+`sh dep_installer_debian.sh && sh playground_join_with_built_sn_node.sh`
 
 ^^ this will:
 - install the dep and safe cli
@@ -76,7 +76,7 @@ On manjaro:
 
 `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
 
-`sh dep_installer_manjaro.sh && sh playgroung_join_with_built_sn_node.sh`
+`sh dep_installer_manjaro.sh && sh playground_join_with_built_sn_node.sh`
 
 ^^ this will:
 - install the dep and safe cli
