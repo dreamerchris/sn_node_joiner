@@ -4,7 +4,7 @@ echo "pacman -Syy"
 sudo pacman -Syy >/dev/null && echo "pacman -Syy success!" || echo "ERROR pacman -Syy failed"
 
 echo "installing snapd build-essential moreutils"
-sudo pacman -S --noconfirm snapd base-devel moreutils >/dev/null && echo "snapd base-devel moreutils installed!" || echo "ERROR some or all failed to install! (snapd base-devel moreutils)"
+sudo pacman -S --noconfirm snapd base-devel moreutils tree >/dev/null && echo "snapd base-devel moreutils tree installed!" || echo "ERROR some or all failed to install! (snapd base-devel moreutils tree)"
 
 echo "symlinking snap"
 sudo ln -s /var/lib/snapd/snap /snap
