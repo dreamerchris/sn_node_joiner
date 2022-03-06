@@ -5,7 +5,8 @@ how to use for dreamnet:
 tested in debian 10/11 and manjaro
 
 1. 
-a. debian: `sudo apt-get install -y git` 
+a. debian: `sudo apt-get install -y git` or if you dont have sudo as root run first `apt install sudo`
+
 b. manjaro `sudo pacman -Syy && sudo pacman -S --noconfirm git`
 
 and now either one liner:
