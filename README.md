@@ -52,7 +52,7 @@ if you want to stop all nodes run `sh multi_down.sh`
 
 
 
-how to use for the 5/3/2022 playground:
+## how to run your own network from your debian/manjaro machine!
 
 On debian:
 
@@ -60,16 +60,16 @@ On debian:
 
 `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
 
-`sh dep_installer_debian.sh && sh playground_join_with_built_sn_node.sh`
+(make sure you port forward 12000-12035)
+
+`sh dep_installer_debian.sh && sh launch_n_multi_joiner.sh`
 
 ^^ this will:
 - install the dep and safe cli
-- add playground config and switch to it
-- safe file get the sn_node.zip from the playground itself
-- unzip it and copy it in ~/.safe/node
-- add a service to join as a node
+- add genesis node and create mynet config
+- add 35 nodes
 
-run `sh single_down.sh` to remove the node! 
+run `sh multi_down.sh` to remove the nodes! 
 
 
 
@@ -79,13 +79,13 @@ On manjaro:
 
 `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner`
 
-`sh dep_installer_manjaro.sh && sh playground_join_with_built_sn_node.sh`
+(make sure you port forward 12000-12035)
+
+`sh dep_installer_manjaro.sh && sh launch_n_multi_joiner.sh`
 
 ^^ this will:
 - install the dep and safe cli
-- add playground config and switch to it
-- safe file get the sn_node.zip from the playground itself
-- unzip it and copy it in ~/.safe/node
-- add a service to join as a node
+- add genesis node and create mynet config
+- add 35 nodes
 
-run `sh single_down.sh` to remove the node!
+run `sh mutli_down.sh` to remove the node!
