@@ -1,7 +1,7 @@
 #!/bin/bash
 SAFENET="dreamnet"
 CONFIG_URL="https://nx23255.your-storageshare.de/s/F7e2QaDLNC2z94z/download/dreamnet.config"
-NODE_NUM=20
+NODE_NUM=35
 USER=$(whoami)
 
 safe networks add $SAFENET "$CONFIG_URL"
