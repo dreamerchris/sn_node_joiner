@@ -37,8 +37,8 @@ WantedBy=multi-user.target"\
 
 sudo systemctl start sn_node$CURRENT_NODE.service
 sleep 3
-safe networks add dreamnet
-safe networks switch dreamnet
+safe networks add mynet
+safe networks switch mynet
 
 for CURRENT_NODE in  $(seq $NODE_NUM)
 do
