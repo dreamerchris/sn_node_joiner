@@ -11,7 +11,7 @@ mkdir $HOME/.safe/node/
 
 sudo cp sn_node $HOME/.safe/node/sn_node
 
-NODE_NUM=20
+NODE_NUM=35
 USER=$(whoami)
 
 
