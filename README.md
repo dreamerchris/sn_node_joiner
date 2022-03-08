@@ -52,7 +52,7 @@ if you want to stop all nodes run `sh multi_down.sh`
 
 
 
-## how to run your own network from your debian/manjaro machine!
+## how to run your own network from your debian/manjaro machine! or one VPS!
 
 On debian:
 
