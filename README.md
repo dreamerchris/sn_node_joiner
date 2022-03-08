@@ -24,7 +24,7 @@ what it does is:
 
 -switches to dreamnet
 
--launches 20 nodes
+-launches 35 nodes
 
 -the script runs vdash to see the info of your nodes with gui! ( use left/right arrows to switch node and q for exit)
 
