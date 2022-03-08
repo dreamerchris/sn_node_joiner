@@ -16,7 +16,7 @@ use this one liner for dreamnet - with 20 nodes (needs ports open 12001-12020) a
 
 debian `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner && sh dep_installer_debian.sh && sh multi_sn_node_joiner.sh && vdash ~/.safe/node/local_node*/sn_node.log`
 
-debian `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner && sh dep_installer_manjaro.sh && sh multi_sn_node_joiner.sh && vdash ~/.safe/node/local_node*/sn_node.log`
+manjaro `git clone https://github.com/dreamerchris/dream_sn_node_joiner.git && cd dream_sn_node_joiner && sh dep_installer_manjaro.sh && sh multi_sn_node_joiner.sh && vdash ~/.safe/node/local_node*/sn_node.log`
 
 what it does is:
 
