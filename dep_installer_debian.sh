@@ -18,8 +18,6 @@ rustup toolchain install stable && echo "rust second install command success!" |
 echo "installing vdash"
 cargo install vdash && echo "vdash installed!" || echo "ERROR vdash failed to install"
 
-rm -rf "$HOME"/.safe && echo "succes in removing ~/.safe folder" # clear out any old files
-
 #get the CLI
 curl -so- https://raw.githubusercontent.com/maidsafe/safe_network/master/resources/scripts/install.sh | bash
 echo ""
