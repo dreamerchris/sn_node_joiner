@@ -14,7 +14,7 @@ CURRENT_ROOT_DIR=$HOME/.safe/node/local_node0/
 CURRENT_LOG_DIR=$HOME/.safe/node/local_node0/
 CURRENT_NODE=0
 echo -n "#!/bin/bash
-RUST_LOG=safe_network=trace,qp2p=info \
+RUST_LOG=sn_node=trace,qp2p=info \
         $HOME/.safe/node/sn_node --first \
         --local-addr '$LOCAL_IP':$SAFE_PORT \
         --public-addr '$PUBLIC_IP':$SAFE_PORT \
@@ -48,7 +48,7 @@ CURRENT_LOG_DIR=$HOME/.safe/node/local_node$CURRENT_NODE/
 mkdir $CURRENT_ROOT_DIR
 
 echo -n "#!/bin/bash
-RUST_LOG=safe_network=trace,qp2p=info \
+RUST_LOG=sn_node=trace,qp2p=info \
         $HOME/.safe/node/sn_node \
         --local-addr '$LOCAL_IP':$SAFE_PORT \
         --public-addr '$PUBLIC_IP':$SAFE_PORT \
