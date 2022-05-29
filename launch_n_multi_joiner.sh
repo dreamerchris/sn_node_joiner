@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODE_NUM=35
+NODE_NUM=7
 USER=$(whoami)
 
 ACTIVE_IF=$( ( cd /sys/class/net || exit; echo *)|awk '{print $1;}')
