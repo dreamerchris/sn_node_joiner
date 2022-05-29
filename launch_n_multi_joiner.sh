@@ -24,7 +24,7 @@ RUST_LOG=sn_node=trace,qp2p=info \
 | tee $HOME/.safe/node/start-node$CURRENT_NODE.sh
 
 chmod u+x $HOME/.safe/node/start-node$CURRENT_NODE.sh
-
+echo ""
 echo -n "[Unit]
 Description=Safe Local Node $CURRENT_NODE
 [Service]
@@ -58,7 +58,7 @@ RUST_LOG=sn_node=trace,qp2p=info \
 | tee $HOME/.safe/node/start-node$CURRENT_NODE.sh
 
 chmod u+x $HOME/.safe/node/start-node$CURRENT_NODE.sh
-
+echo ""
 echo -n "[Unit]
 Description=Safe Local Node $CURRENT_NODE
 [Service]
