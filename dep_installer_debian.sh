@@ -11,7 +11,7 @@ sudo snap install curl && echo "curl installed!" || echo "ERROR curl failed to i
 
 echo "installing rust through snap"
 sudo snap install rustup --classic && echo "rust first install command success!" || echo "ERROR first rust install command failed!"
-
+PATH=$PATH:$HOME/.safe/cli:/usr/local/bin/:/snap/bin
 echo "continue to installing rust"
 rustup toolchain install stable && echo "rust second install command success!" || echo "ERROR second rust install command failed!"
 
