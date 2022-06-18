@@ -1,5 +1,5 @@
 #!/bin/bash
-
+PATH=$PATH:$HOME/.safe/cli:/usr/local/bin/:/snap/bin
 NODE_NUM=7
 USER=$(whoami)
 
